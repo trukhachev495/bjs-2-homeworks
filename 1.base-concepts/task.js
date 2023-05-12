@@ -35,5 +35,5 @@ function calculateTotalMortgage (percent, contribution, amount, countMonths) {
   let monthlyPayment = amount1 *(percent1 + percent1 / ((1 + percent1) ** countMonths - 1)) /*Ежемесячный платеж*/
   let totalPayment = monthlyPayment * countMonths
 
-  return totalPayment.toFixed(2)
+  return Number(totalPayment.toFixed(2))
 }
